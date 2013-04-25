@@ -382,7 +382,6 @@ table#wp-calendar th{
 	}
 .dh1{
 	width:8.3333333333333333%;
-	border-right: 3px solid #D2CEC7;
 	}
 .dh2{
 	width:14.583333333333334%
@@ -405,6 +404,7 @@ table#wp-calendar th{
 .dh8{
 	width:66.66666666666666%;
 	background-color:#FFF;
+	border-right: 3px solid #D2CEC7;
 	}
 .dh9{
 	width:72.91666666666666%
@@ -584,8 +584,6 @@ h6 {
 /* main contents
 ----------------------------------------------- */
 #main{
-	margin-left:-2%;
-	max-width:890px;
 	background-color:#FFF;
 	}
 .breadcrumb{
@@ -1007,7 +1005,6 @@ div.comment-content li{
 	letter-spacing:1.2px;
 	}
 .sidebar{
-	padding-left:10%;
 	margin-bottom:20px;
 	}
 .seperated{
@@ -1220,9 +1217,19 @@ a.rsswidget{
 
 /* footer
 ----------------------------------------------- */
-#footer{
-	margin-left:-2%;
-	border-top:5px solid #333;
+.banner{
+	}
+.bsegment1{
+	border-top:3px solid #ED174B;
+	}
+.bsegment2{
+	border-top:3px solid #019BD9;
+	}
+.bsegment3{
+	border-top:3px solid #6EBE43;
+	}
+.bsegment4{
+	border-top:3px solid #F8901F;
 	}
 .copyright{
 	padding:30px 0 0 20%;	

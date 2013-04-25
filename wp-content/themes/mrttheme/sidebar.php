@@ -4,7 +4,8 @@
  * @since dkNote 1.0
  */
 ?>
-<aside class="dh4 sidebar-wrapper">
+<div class="span3">
+<aside class="sidebar-wrapper">
 <div class="sidebar seperated">
  <?php if (!dynamic_sidebar('Sidebar1')) : ?>
  <?php endif; ?>
@@ -26,3 +27,4 @@
  <?php endif; ?>
 </div>
 </aside>
+</div>
