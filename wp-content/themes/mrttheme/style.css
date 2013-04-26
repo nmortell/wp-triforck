@@ -493,7 +493,7 @@ h6 {
 ------------------------------------------------------------- */
 .wrapper{
 	border-bottom:5px solid #574E3D;
-	padding:20px 0;
+	padding:20px 0px 0px 0px;
 	overflow: hidden;
 	}
 /* header
@@ -1219,7 +1219,39 @@ a.rsswidget{
 ----------------------------------------------- */
 .banner{
 	margin-bottom:0px !important;
+	float:right;
+	display:inline;
+	background-color: #695E4A;
 	}
+#redBanner{
+	position: absolute;
+	width:25%;
+	left:0px;
+	border-bottom:3px solid #ED174B;
+	z-index:4;
+	}
+#blueBanner{
+        position: absolute;
+        width:50%;
+	left:25%;
+	z-index:3;
+	border-bottom:3px solid #019BD9;
+        }
+#greenBanner{
+        position: absolute;
+        width:25%;
+	left:50%;
+	z-index:3;
+	border-bottom:3px solid #6EBE43;
+        }
+#orangeBanner{
+        position: absolute;
+        width:25%;
+	left:75%;
+	z-index:4;
+	border-bottom:3px solid #F8901F;
+        }
+
 .bsegment1{
 	border-bottom:3px solid #ED174B;
 	}
