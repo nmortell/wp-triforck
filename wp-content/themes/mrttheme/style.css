@@ -1218,19 +1218,28 @@ a.rsswidget{
 /* footer
 ----------------------------------------------- */
 .banner{
+	margin-bottom:0px !important;
 	}
 .bsegment1{
-	border-top:3px solid #ED174B;
+	border-bottom:3px solid #ED174B;
 	}
 .bsegment2{
-	border-top:3px solid #019BD9;
+	border-bottom:3px solid #019BD9;
 	}
 .bsegment3{
-	border-top:3px solid #6EBE43;
+	border-bottom:3px solid #6EBE43;
 	}
 .bsegment4{
-	border-top:3px solid #F8901F;
+	border-bottom:3px solid #F8901F;
 	}
+#product-banner{
+	margin-top:0px;
+	background-color:#695E4A;
+}
+#info-banner{
+	margin-top:0px;
+	background-color:#574E3D;
+}
 .copyright{
 	padding:30px 0 0 20%;	
 	}

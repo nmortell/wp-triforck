@@ -83,19 +83,38 @@ function dknote_setup() {
 add_action('dknote_my_footer','dknote_footer_setup');
 function dknote_footer_setup (){
 ?>
-<div class="row-fluid">
-  <div class="span3 banner bsegment1">
+<div class="row-fluid banner">
+  <div class="span3 bsegment1">
   </div>
-  <div class="span3 banner bsegment2">
+  <div class="span3 bsegment2">
   </div>
-  <div class="span3 banner bsegment3">
+  <div class="span3 bsegment3">
   </div>
-  <div class="span3 banner bsegment4">
+  <div class="span3 bsegment4">
   </div>
 </div>
-  <div class="copyright">
-   <p class="left"><?php _e( 'Copyright &copy;', 'dknote' ); ?> <?php echo date('Y'); ?> <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a><br>
-   <?php printf( __('Powered by <a href="http://wordpress.org/" title="%1$s">%2$s</a> | <a href="http://omague.com/" title="%3$s">%4$s Themes</a>', 'dknote'), esc_attr( 'A Semantic Personal Publishing Platform'), 'WordPress', esc_attr( 'dkNote Themes by. Deny E.Wicahyo'),'dkNote'); ?></p> 
+<div class="row-fluid" id="product-banner">
+	<div class="span12">
+		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/bhProduct.jpg"/>
+		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/edProduct.jpg"/>
+		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/fcProduct.jpg"/>
+		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/fProduct.jpg"/>
+		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/jProduct.jpg"/>
+		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/mProduct.jpg"/>
+		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/pProduct.jpg"/>
+		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/thProduct.jpg"/>
+	</div>
+</div>
+<div class="row-fluid" id="product-banner">
+	<div class="span2 offset5">
+		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/meredithLogo.jpg"/>
+	</div>
+</div>
+  <div class="row-fluid" id="info-banner">
+	<div class="span12">
+		<p align="center" style="color:#A59E91;">Text and links and stuff go here for clickiness and reading stuff</p>
+	</div>
+  </div>
   </div>
 </section>
 </section>
