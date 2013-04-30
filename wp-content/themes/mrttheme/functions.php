@@ -83,33 +83,45 @@ function dknote_setup() {
 add_action('dknote_my_footer','dknote_footer_setup');
 function dknote_footer_setup (){
 ?>
-<div class="row-fluid banner">
-  <div class="span3 bsegment1">
-  </div>
-  <div class="span3 bsegment2">
-  </div>
-  <div class="span3 bsegment3">
-  </div>
-  <div class="span3 bsegment4">
-  </div>
-</div>
-<div class="row-fluid" id="product-banner">
-	<div class="span12">
-		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/bhProduct.jpg"/>
-		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/edProduct.jpg"/>
-		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/fcProduct.jpg"/>
-		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/fProduct.jpg"/>
-		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/jProduct.jpg"/>
-		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/mProduct.jpg"/>
-		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/pProduct.jpg"/>
-		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/thProduct.jpg"/>
+<!-- 4-color responsive banner-->
+<div class="row-fluid">
+	<div class="span12 banner">
+		<div id="redBanner">
+		</div>
+		<div id="blueBanner">
+		</div>
+		<div id="greenBanner">
+		</div>
+		<div id="orangeBanner">
+		</div>
 	</div>
 </div>
+<!--powered by img and anchor-->
+<div class="row-fluid" id="product-banner">
+	<div class="span2 offset5" align="center" style="padding-top:15px;">
+		<a href="http://www.meredith.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/poweredby.png" style="align:center;"/></a>
+	</div>
+</div>
+<!--Meredith logo and anchor-->
 <div class="row-fluid" id="product-banner">
 	<div class="span2 offset5">
-		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/meredithLogo.jpg"/>
+		<a href="http://www.meredith.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/meredithLogo.png"/></a>
 	</div>
 </div>
+<!--Product images and links to homepages-->
+<div class="row-fluid" id="product-banner">
+	<div class="span12" align="center">
+               <a href="http://www.bhg.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/bhProduct.png"/></a>
+               <a href="http://www.rachaelraymag.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/edProduct.png"/></a>
+               <a href="http://www.familycircle.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/fcProduct.png"/></a>
+               <a href="http://www.fitnessmagazine.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/fProduct.png"/></a>
+               <a href="http://www.lhj.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/jProduct.png"/></a>
+               <a href="http://www.more.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/mProduct.png"/></a>
+               <a href="http://www.parents.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/pProduct.png"/></a>
+                <a href="http://www.traditionalhome.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/thProduct.png"/></a>
+        </div>
+</div>
+<!-- copyright section-->
   <div class="row-fluid" id="info-banner">
 	<div class="span12">
 		<p align="center" style="color:#A59E91;">Text and links and stuff go here for clickiness and reading stuff</p>
