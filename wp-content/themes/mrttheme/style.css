@@ -446,6 +446,42 @@ src: url('font/droid/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
 font-weight:normal;
 font-style:normal;
 }
+@font-face{
+font-family: 'BookmanOldStyleReg/';
+src: url('font/BookOS/26D3C8_0_0.eot');
+src: url('font/BookOS/26D3C8_0_0.eot?#iefix') format('embedded-opentype'),
+	url('font/BookOS/26D3C8_0_0.woff') format('woff'),
+	url('font/BookOS/26D3C8_0_0.ttf') format('truetype'),
+	url('font/BookOS/26D3C8_0_0.svg') format('svg');
+font-weight:normal;
+font-style:normal;}
+@font-face{
+font-family: 'BookmanOldStyleBold/';
+src: url('font/BookOS/26D3C8_1_0.eot');
+src: url('font/BookOS/26D3C8_1_0.eot?#iefix') format('embedded-opentype'),
+        url('font/BookOS/26D3C8_1_0.woff') format('woff'),
+        url('font/BookOS/26D3C8_1_0.ttf') format('truetype'),
+        url('font/BookOS/26D3C8_1_0.svg') format('svg');
+font-weight:normal;
+font-style:normal;}
+@font-face{
+font-family: 'CenturyGothicReg/';
+src: url('font/CentruyG/26D3C8_2_0.eot');
+src: url('font/CenturyG/26D3C8_2_0.eot?#iefix') format('embedded-opentype'),
+        url('font/CenturyG/26D3C8_2_0.woff') format('woff'),
+        url('font/CenturyG/26D3C8_2_0.ttf') format('truetype'),
+        url('font/CenturyG/26D3C8_2_0.svg') format('svg');
+font-weight:normal;
+font-style:normal;}
+@font-face{
+font-family: 'CenturyGothicBold/';
+src: url('font/CentruyG/26D3C8_3_0.eot');
+src: url('font/CenturyG/26D3C8_3_0.eot?#iefix') format('embedded-opentype'),
+        url('font/CenturyG/26D3C8_3_0.woff') format('woff'),
+        url('font/CenturyG/26D3C8_3_0.ttf') format('truetype'),
+        url('font/CenturyG/26D3C8_3_0.svg') format('svg');
+font-weight:normal;
+font-style:normal;}
 @font-face {
 font-family: 'DroidSansBold';
 src: url('font/droid/DroidSans-Bold-webfont.eot');
@@ -489,13 +525,32 @@ h6 {
 #main h6{
 	line-height:1.6em;
 	}
+.border-gradient-top{
+	border-top: 5px solid #000;
+	padding-top:5px;
+}
+.menu-item a{
+	color:#FFF !important;
+	font:normal 11px "CenturyGothicBold" bold;
+}
 /* Layout
 ------------------------------------------------------------- */
+html, body{
+	height:100%;
+}
 .wrapper{
 	border-bottom:5px solid #574E3D;
 	padding:20px 0px 0px 0px;
 	overflow: hidden;
+	background-color:#F9F7F2;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
 	}
+.footer, .push{
+	height: 4em;
+}
 /* header
 ----------------------------------------------- */
 .top-wrapper{
@@ -508,6 +563,10 @@ h6 {
 	font-size:.9em;
 	text-shadow: none
 	}
+#mrt-header{
+	background-color:#FFFFFF;
+	margin-bottom: 10px;	
+}
 /*Main Menu 
  -----------------------------------------------*/
 .selectnav {
@@ -585,6 +644,13 @@ h6 {
 ----------------------------------------------- */
 #main{
 	background-color:#FFF;
+	}
+.maincontent{
+	height:100%;
+	height: auto !important;
+	min-height: 100%;
+	margin 0 auto -4em;
+	background-color: #FFFFFF;
 	}
 .breadcrumb{
 	padding-top:10px;
@@ -1016,7 +1082,6 @@ div.comment-content li{
 	}
 .sidebar li{
 	display:block;
-	border-bottom:1px dotted #222;
 	}
 .sidebar li li:last-child{border-bottom:none}
 .sidebar li a{
@@ -1269,8 +1334,16 @@ a.rsswidget{
 	background-color:#695E4A;
 }
 #info-banner{
+	color: #D2CEC7;
+	font: normal 11px 'CenturyGothicReg';
 	margin-top:0px;
 	background-color:#574E3D;
+}
+#info-banner a{
+	color: #D2CEC7;
+}
+#info-banner a:focus{
+	color: #D2CEC7 !important;
 }
 .copyright{
 	padding:30px 0 0 20%;	

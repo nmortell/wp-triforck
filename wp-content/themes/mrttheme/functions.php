@@ -124,11 +124,10 @@ function dknote_footer_setup (){
 <!-- copyright section-->
   <div class="row-fluid" id="info-banner">
 	<div class="span12">
-		<p align="center" style="color:#A59E91;">Text and links and stuff go here for clickiness and reading stuff</p>
+		<p align="center" style="color:#A59E91;">© Copyright 2013. <a href="http://www.meredith.com">Meredith Corporation.</a> All Rights Reserved | <a href="">Privacy Policy</a> | By usin the site, you agree to our <a href="">Terms of Service.</a></p>
 	</div>
   </div>
   </div>
-</section>
 </section>
 <?php wp_footer(); ?>
 </body>

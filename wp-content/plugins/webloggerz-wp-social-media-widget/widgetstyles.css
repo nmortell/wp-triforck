@@ -1,0 +1,31 @@
+/*  Webloggerz Social Media Wigdet By Anshit Gupta http://webloggerz.com/ */
+.webloggerz-widget{
+margin-bottom: 20px !important;
+overflow: hidden !important;
+clear: both !important;
+}
+
+.webloggerz-widget ul{ margin:0px !important; padding:0px !important; list-style: none !important;}
+.webloggerz-widget li {
+line-height: 15px; float: left; border:0px !important;
+width: 30% !important; padding: 10px 0 !important;
+padding-left: 3% !important; list-style:none !important; background-image:none !important;}
+
+.webloggerz-widget li a{ display: block !important; padding-top: 40px !important; text-align: right !important; opacity: 0.7 !important; 
+padding-right: 10% !important; padding-left:0px !important;}
+.webloggerz-widget li a:hover { opacity: 1 !important; text-decoration: none; }
+.webloggerz-widget li span { display: block; font-size: 14px; color: #fff;}
+.webloggerz-widget li a small { color: #FFF; font-size:11px;}
+.rss-subscribers { background-color: #fd9f13 !important;}
+.rss-subscribers a { background: url(images/rss-icon.png) no-repeat left top !important;}
+li.twitter-followers { border: 1px solid #59c8ff; border-width: 0 1px 0 1px; background-color: #59c8ff !important;}
+.twitter-followers a { background: url(images/twitter-icon.png) no-repeat left top !important;}
+.facebook-fans {background-color: #4c66a4 !important;}
+.facebook-fans a { background: url(images/facebook-icon.png) no-repeat left top !important;}
+.author-credit a{float: right; margin-top: -15px; font-size: 10px; font-style: italic;}
+.iAb {border:0px !important;}
+/*.googleplus_widget{ width: 306px; float: left; } */
+.googleplus_widget2{ margin-top:-18px; clear:both; }
+/*.googleplus_widget span{ width: 306px;        float: left;    overflow: hidden;    background: #fff; }
+.googleplus_widget span div{    margin: -1px 0 0 -1px !important;    position: relative; }
+*/
