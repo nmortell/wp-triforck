@@ -1,4 +1,9 @@
 wp-triforck
 ===========
 
-a fork of vagrant press used to develop and test different themes and plugins
+a Wordpress Content folder with custom themes and plugins
+
+to keep different environments up to date 
+	-pre commit: mysqldump -u [mysql user] -p --skip-extended-insert [database] > /path/to/repo/wordpress-dev.sql
+
+	-post merge: mysql -u [mysql user] -p [database] < /path/to/repo/wordpress-dev.sql

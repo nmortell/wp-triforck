@@ -44,9 +44,9 @@ img{
 	height:auto
 	}
 body{
-	color:#444;
-	font-size:100%;
-	font-family:'DroidSansRegular',sans-serif;
+	color:#574E3D;
+	font-size:16px;
+	font-family:'CenturyGothicReg';
 	background:#fff;
 	word-wrap:break-word;
 	}
@@ -361,6 +361,17 @@ table#wp-calendar th{
 	display: block;
 	margin: 0 auto ;
 }
+/*Widget Override styles
+--------------------------------------------------------------*/
+a.post-title{
+	color:#019BD9;
+	font-style: normal;
+	font-family: "CenturyGothicReg" !important;
+	font-size:14px !important;
+}
+div.post-entry{
+	color:#;
+}
 
 /* Grid Fluid 12 Column
 ------------------------------------------------------------- */
@@ -495,7 +506,7 @@ font-style:normal;
 h1, h2, h3, h4, h5, h6,.main-nav,.selectnav,
 #pagenavi,.readmore,.social,.next-post,.prev-post,.breadcrumb,
 .tombolkomentar,.copyright,#wp-calendar caption,#search-button{
-	font-family: 'DroidSansBold', sans-serif;
+	font-family: 'BookmanOldStyleBold';
 	}
 h1, h2, h3, h4, h5, h6,.readmore{
 	}
@@ -506,7 +517,8 @@ h2 {
   font-size: 23px;
   }
 h3 {
-  font-size: 20px;
+  color:#A59E91;
+  font-size: 18px;
   }
 h4 {
   font-size: 16px;
