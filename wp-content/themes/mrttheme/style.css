@@ -576,9 +576,18 @@ html, body{
 	text-shadow: none
 	}
 #mrt-header{
-	background-color:#FFFFFF;
+	background-color:#F9F7F2;
+	border-bottom:1px solid #D2CEC7;
 	margin-bottom: 10px;	
 }
+#rtLogo{
+	padding-left:3px;
+	background-image:url('images/grey-divider.png');
+	background-repeat:no-repeat;
+	background-position:left;
+}
+	
+	
 /*Main Menu 
  -----------------------------------------------*/
 .selectnav {
@@ -655,14 +664,14 @@ html, body{
 /* main contents
 ----------------------------------------------- */
 #main{
-	background-color:#FFF;
+	background-color:#FFF !important;
 	}
 .maincontent{
 	height:100%;
 	height: auto !important;
 	min-height: 100%;
 	margin 0 auto -4em;
-	background-color: #FFFFFF;
+	background-color: #FFFFFF !important;
 	}
 .breadcrumb{
 	padding-top:10px;
@@ -1086,7 +1095,7 @@ div.comment-content li{
 	margin-bottom:20px;
 	}
 .seperated{
-	border-bottom: 3px solid #D2CEC7;
+	border-bottom: 1px solid #D2CEC7;
 	}
 .sidebar ul,
 .sidebar ol{

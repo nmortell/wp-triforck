@@ -5,8 +5,17 @@
  */
 ?>
 <div class="row-fluid" id="mrt-header">
-<hgroup class="top-wrapper">
-<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-<h3><?php bloginfo( 'description' ); ?></h3>
-</hgroup>
+	<div class="span9">
+		<ul>
+			<li id="werebuild-logo">
+				<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/werebuild-logo.png" />
+			</li>
+			<li id="goal-desc">
+				<p></p>
+			</li>
+		</ul>
+	</div>
+	<div class="span3" id="rtLogo">
+		<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/rtLogo.png"/>
+	</div>
 </div>
