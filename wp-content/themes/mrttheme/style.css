@@ -1140,6 +1140,10 @@ a.rsswidget{
 .volunteer-post{
 position:center;
 }
+.frm_form_widget{
+visibility:hidden;
+display:none;
+}
 .volunteer-thumb{
 float:left;
 }

@@ -37,7 +37,9 @@ if( $flexible_posts->have_posts() ):
 			</div>
 			
 		</li>
-		
+		<div>
+			<input type="button" value="Be Our Volunteer" class="volunteer-btn" onClick="toggleV()" />
+		</div>	
 	<?php endwhile; ?>
 	</ul><!-- .dpe-flexible-posts -->
 <?php else: // We have no posts ?>
