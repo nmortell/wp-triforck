@@ -171,6 +171,8 @@ class Advanced_Recent_Posts_Widget extends WP_Widget {
 					) :
 					
 					  $thumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID),'full');
+					  _e('THUMBNAIL $thumbnail','mrt');
+					  echo "POST_ID" . $post->ID;
 					  $plugin_dir = 'advanced-recent-posts-widget';
 				?>
 

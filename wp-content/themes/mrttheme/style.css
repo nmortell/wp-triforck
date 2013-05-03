@@ -521,7 +521,8 @@ h3 {
   font-size: 18px;
   }
 h4 {
-  font-size: 16px;
+  color:#574E3D;
+  font-size: 14px;
   }
 h5 {
   font-size: 14px;
@@ -529,6 +530,10 @@ h5 {
 h6 {
   font-size: 13px;
   }
+p{
+  font-family:'CenturyGothicReg';
+  font-size:14px;
+}
 #main h1,
 #main h2,
 #main h3,
@@ -687,7 +692,6 @@ html, body{
 	}
 .post,.content-page,.archive-title,.archive-page,.type-attachment{
 	border-top:2px solid #333;
-	padding:0 0 10px 20%;
 	}
 .post-footer,#comments{
 	margin:-1px 0 0;
@@ -1132,7 +1136,34 @@ a.rsswidget{
 	padding: 4px 10px;
 	width: 100%;
 	}
-/*Sosial Media Style*/
+/*Volunteer of the month styles*/
+.volunteer-post{
+position:center;
+}
+.volunteer-thumb{
+float:left;
+}
+.volunteer-text,.title{
+font-family:'CenturyGothicBold';
+font-size:
+}
+#volunteer-excerpt{
+float:right;
+}
+/*Social bar widget style*/
+ul.share{
+	margin-bottom:200px;
+}
+ul.share li.twitter{
+	width:100% !important;
+}
+div.btn-o{
+
+}
+.btn-o, .count-o, .btn, .btn .label, #count{
+	display:block !important;
+}
+/*Social Media Style*/
 .social{
 	display:block;
 	position: relative;

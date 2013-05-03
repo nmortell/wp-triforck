@@ -71,6 +71,7 @@ function dknote_setup() {
   add_editor_style();
   add_theme_support( 'automatic-feed-links' );
   add_theme_support('custom-background');
+  add_theme_support('post-thumbnails');
   register_nav_menus( array('primary' => __( 'Primary Menu', 'dknote' ), ) );
 }
 
@@ -134,6 +135,15 @@ function dknote_footer_setup (){
 </html>
 <?php
 }
+/**
+ *Excerpt length filter used mostly for volunteer of the month
+ *
+ *
+*/
+function custom_excerpt_length( $length ){
+	return 15;
+}
+add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
 /**
  * Default menu fallback function

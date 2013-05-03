@@ -11,7 +11,7 @@
 				<img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/werebuild-logo.png" />
 			</li>
 			<li id="goal-desc">
-				<p></p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vel ante id mi euismod varius. Etiam pulvinar dictum ligula nec tempus. Ut viverra fermentum urna et dapibus. Sed at posuere mauris. Cras vulputate, turpis quis adipiscing hendrerit, sapien metus faucibus nunc, ut ullamcorper nulla lectus id purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut vel sapien id augue dignissim condimentum at a urna. Aliquam erat volutpat.</p>
 			</li>
 		</ul>
 	</div>
