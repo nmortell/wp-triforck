@@ -100,32 +100,32 @@ function dknote_footer_setup (){
 <!--powered by img and anchor-->
 <div class="row-fluid" id="product-banner">
 	<div class="span2 offset5" align="center" style="padding-top:15px;">
-		<a href="http://www.meredith.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/poweredby.png" style="align:center;"/></a>
+		<a href="http://www.meredith.com/"><img src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/poweredby.png" style="align:center;"/></a>
 	</div>
 </div>
 <!--Meredith logo and anchor-->
 <div class="row-fluid" id="product-banner">
 	<div class="span2 offset5">
-		<a href="http://www.meredith.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/meredithLogo.png"/></a>
+		<a href="http://www.meredith.com/"><img src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/meredithLogo.png"/></a>
 	</div>
 </div>
 <!--Product images and links to homepages-->
 <div class="row-fluid" id="product-banner">
 	<div class="span12" align="center">
-               <a href="http://www.bhg.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/bhProduct.png"/></a>
-               <a href="http://www.rachaelraymag.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/edProduct.png"/></a>
-               <a href="http://www.familycircle.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/fcProduct.png"/></a>
-               <a href="http://www.fitnessmagazine.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/fProduct.png"/></a>
-               <a href="http://www.lhj.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/jProduct.png"/></a>
-               <a href="http://www.more.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/mProduct.png"/></a>
-               <a href="http://www.parents.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/pProduct.png"/></a>
-                <a href="http://www.traditionalhome.com/"><img src="http://localhost:8080/wordpress/wp-content/themes/mrttheme/images/thProduct.png"/></a>
+               <a href="http://www.bhg.com/"><img src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/bhProduct.png"/></a>
+               <a href="http://www.rachaelraymag.com/"><img src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/edProduct.png"/></a>
+               <a href="http://www.familycircle.com/"><img src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/fcProduct.png"/></a>
+               <a href="http://www.fitnessmagazine.com/"><img src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/fProduct.png"/></a>
+               <a href="http://www.lhj.com/"><img src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/jProduct.png"/></a>
+               <a href="http://www.more.com/"><img src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/mProduct.png"/></a>
+               <a href="http://www.parents.com/"><img src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/pProduct.png"/></a>
+                <a href="http://www.traditionalhome.com/"><img src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/thProduct.png"/></a>
         </div>
 </div>
 <!-- copyright section-->
   <div class="row-fluid" id="info-banner">
 	<div class="span12">
-		<p align="center" style="color:#A59E91;">© Copyright 2013. <a href="http://www.meredith.com">Meredith Corporation.</a> All Rights Reserved | <a href="">Privacy Policy</a> | By usin the site, you agree to our <a href="">Terms of Service.</a></p>
+		<p align="center" style="color:#A59E91;">© Copyright 2013. <a href="http://www.meredith.com">Meredith Corporation.</a> All Rights Reserved | <a href="http://www.meredith.com/privacy.html">Privacy Policy</a> | By usin the site, you agree to our <a href="http://www.meredith.com/Visitoragreement.html">Terms of Service.</a></p>
 	</div>
   </div>
   </div>
@@ -242,20 +242,44 @@ register_sidebar(array(
      'after_title' => '</h3>'
 ));
 register_sidebar(array(
-     'name' => __('MainContent','mrt'),
-     'description' =>__('Add Main content plugins here', 'mrt'),
+     'name' => __('LeftSidebar','mrt'),
+     'description' =>__('Add Social share bar plugin here', 'mrt'),
      'before_widget' => '',
      'after_widget' => '',
      'before_title' => '<h3>',
      'after_title' => '</h3>'
 ));
 register_sidebar(array(
-     'name' => __('LeftSidebar','mrt'),
-     'description' =>__('Add Main content plugins here', 'mrt'),
+     'name' => __('Video-bar','mrt'),
+     'description' =>__('Add Video player plugin here', 'mrt'),
      'before_widget' => '',
      'after_widget' => '',
      'before_title' => '<h3>',
      'after_title' => '</h3>'
+));
+register_sidebar(array(
+	'name'=>__('instagram-bar','mrt'),
+	'description' =>__('Add instagram gallery here', 'mrt'),
+	'before_widget' =>'',
+	'after_widget' =>'',
+	'before_title'=>'<h3>',
+	'after_title'=>'</h3>'
+));
+register_sidebar(array(
+	'name' =>__('twitter-bar','mrt'),
+	'description' =>__('Add the twitter plugin here','mrt'),
+	'before_widget' =>'',
+	'after_widget' =>'',
+	'before_title'=>'<h3>',
+	'after_title'=>'</h3>'
+));
+register_sidebar(array(
+        'name'=>__('Top-Stories','mrt'),
+        'description' =>__('Add top story plugin here', 'mrt'),
+        'before_widget' =>'',
+        'after_widget' =>'',
+        'before_title'=>'<h3>',
+        'after_title'=>'</h3>'
 ));
 }
 

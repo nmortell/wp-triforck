@@ -13,10 +13,11 @@ get_header(); ?>
   </div>
 </section>
 <section class="span8 maincontent">
-  <div class="sidebar" id="main">
-   <?php if (!dynamic_sidebar('MainContent')) : ?>
-   <?php endif; ?>
+  <div class="slider">
+    <?php echo do_shortcode("[slider id='42' name='Main Page Slider']");?>
   </div>
+  <div class="horizontal-grey"></div>
+   <?php get_sidebar("main"); ?>
 </section>
 <?php get_sidebar(); ?>
 </div>

@@ -666,18 +666,53 @@ html, body{
 .main-nav ul ul ul li:first-child > a {
 }
 
-/* main contents
+/* main content
 ----------------------------------------------- */
 #main{
 	background-color:#FFF !important;
+	padding:0px 70px 0px 70px !important;
 	}
 .maincontent{
 	height:100%;
 	height: auto !important;
 	min-height: 100%;
+	padding:15px 15px 0px 15px;
 	margin 0 auto -4em;
 	background-color: #FFFFFF !important;
 	}
+.horizontal-grey{
+	background-image:url('images/four_px_grey_gradient.png');
+	background-repeat:repeat-x;
+	background-position:0% 100%;
+	padding:4px 0px 0px 0px;
+}
+/*slider style*/
+.slider{
+	border-top: 15px;
+	border-right: 15px;
+	border-left:  15px;
+	border-style: solid;
+	border-color: #F9F7F2;
+}
+.flex-control-paging li a{
+background: none repeat scroll 0 0 rgba(1, 155, 217, 0.1) !important;
+}
+.flex-control-paging li a.flex-active{
+background: none repeat scroll 0 0 rgba(1, 155, 217, 1.0) !important;
+}
+.wsp_default_skin .flex-caption{
+background: none repeat scroll 0 0 rgba(105, 94, 74, 0.9) !important;
+display:block;
+width:40% !important;
+height:auto !important;
+padding 5px 10px !important
+}
+p.flex-caption strong{
+color: #D2CEC7;
+font-weight: normal !important;
+}
+
+/***********************************/
 .breadcrumb{
 	padding-top:10px;
 	}
@@ -1092,7 +1127,6 @@ div.comment-content li{
 	}
 .sidebar-wrapper h3{
 	margin:15px 0;
-	text-transform:capitalize;
 	letter-spacing:1.2px;
 	}
 .sidebar{

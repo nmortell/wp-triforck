@@ -59,7 +59,7 @@
 			},
 			height:450,
 			width:380,
-			modal:true,
+			modal:true/*,
 			buttons:{
 				"submit": function(){
 				  var bValid = true;
@@ -68,12 +68,12 @@
 				  bValid = bValid && checkLength(lastname, "last name", 2, 18);
 			          bValid = bValid && checkLength(essay, "essay", 5, 200);
 				 
-				  	var dataString = 'firstname='+ firstname + '&email=' + email + '&phone=' + phonenumber;  
+				  	var dataString = 'firstname='+ firstname.val() + '&email=' + email.val() + '&phone=' + phonenumber.val();  
 				
 			
 					  $.ajax({  
   					  type: "POST",  
-  				 	  url: "bin/process.php",  
+  				 	  url: "wp-content/themes/mrttheme/process.php",  
   					  data: dataString,  
   					  success: function() {  
 				    		$('#volunteer-form').html("<div id='message'></div>");  
@@ -86,13 +86,8 @@
   					  }	  
 					});  
 					return false;
-				
-			
-		
-	
-				  /*need logic to send email to editor*/
 				}
-			}});
+			}*/});
 
 		$("#volunteer-btn").button().click(function(){
 	  		$("#volunteer-form").dialog("open");	 

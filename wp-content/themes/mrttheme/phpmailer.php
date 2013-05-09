@@ -153,13 +153,13 @@ class PHPMailer
      *  Hosts will be tried in order.
      *  @var string
      */
-    var $Host        = "localhost";
+    var $Host        = "smtp.gmail.com";
 
     /**
      *  Sets the default SMTP server port.
      *  @var int
      */
-    var $Port        = 25;
+    var $Port        = 465;
 
     /**
      *  Sets the SMTP HELO of the message (Default is $Hostname).
@@ -177,13 +177,13 @@ class PHPMailer
      *  Sets SMTP username.
      *  @var string
      */
-    var $Username     = "";
+    var $Username     = "nmortelli@gmail.com";
 
     /**
      *  Sets SMTP password.
      *  @var string
      */
-    var $Password     = "";
+    var $Password     = "k4z3n05tigma";
 
     /**
      *  Sets the SMTP server timeout in seconds. This function will not 

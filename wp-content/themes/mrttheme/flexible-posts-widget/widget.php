@@ -39,7 +39,7 @@ if( $flexible_posts->have_posts() ):
 		</li>
 		<div id="volunteer-form" title="Be A Volunteer!">
 		  <p class="validateTips">All fields are required.</p>
-		  <form>
+		  <form method="post" class="frm_settings_form">
 		  <fieldset>
 			<label for="firstname">First Name</label>
 			<input type="text" name="firstname" id="firstname" class="text ui-widget-context ui-corner-all"/>
@@ -54,6 +54,7 @@ if( $flexible_posts->have_posts() ):
 			<label for="essay">Your Essay</label>
 			<textarea type="" name="essay" id="essay" class="" rows="6" cols="20"></textarea>
 		  </fieldset>
+			<input type="submit" class="button-primary" value="<?php _e('Update Options', 'formidable')?>"/>
 		  </form>
 		</div>
 		<div>

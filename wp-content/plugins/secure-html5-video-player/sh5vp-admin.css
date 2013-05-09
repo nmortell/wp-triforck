@@ -1,0 +1,127 @@
+
+.sh5vp-wrapper {
+	max-width:600px;
+}
+.sh5vp-wrapper.skin {
+	max-width:100%;
+}
+.sh5vp-wrapper label.title {
+	font-weight:bold;
+	white-space:nowrap;
+	font-size:16px;
+}
+.sh5vp-wrapper small,
+.sh5vp-wrapper .inline_help {
+	font-size:14px;
+	color:#AAA;	
+}
+.sh5vp_form .clear {
+	clear:both;
+}
+.sh5vp_tabs {
+	clear:both;
+	width:100%;
+	padding-left:3px;
+	padding-top:18px;
+}
+.sh5vp_tabs ul {
+	margin:0px 0px 0px 0px;
+}
+.sh5vp_tabs li {
+	width:auto;
+	background-image:none;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: #bfc1c0;
+	background-image: none;
+	background-origin: padding-box;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	bottom: auto;
+	display: inline-block;
+	float: none;
+	font-family: futura-pt, sans-serif;
+	font-size: 16px;
+	height: 20px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-bottom: 0px;
+	margin-left: -3px;
+	margin-right: 2px;
+	margin-top: 0px;
+	text-align: center;
+	padding:6px 8px 0px 8px;
+
+	color:#FFF;
+	white-space:nowrap;
+	text-decoration:none;
+	cursor:pointer;
+}
+.sh5vp_tabs li.active, .sh5vp_tabs li.active:hover {
+	background-color:#777;
+	cursor:default;
+}
+.sh5vp_tabs li:hover {
+	background-color:#21759B;
+	color:#FFF;
+}
+
+
+.sh5vp_content {
+	border:1px solid #777;
+	position:relative;
+	height:1050px;
+	min-height:400px;
+	width:100%;
+	z-index:10;
+	background-color:#FFF;
+}	
+.sh5vp_content > div {
+	margin:20px 20px 20px 20px;
+}
+.sh5vp_content_tab {
+	position:absolute;
+}
+.sh5vp_content_tab.active {
+	visibility:visible;
+}
+.sh5vp_form input[type="text"], 
+.sh5vp_form textarea {
+	max-width:100%;
+	font-size:16px;
+	border:1px solid #777;
+}
+.sh5vp_form input, 
+.sh5vp_form select, 
+.sh5vp_form label {
+	font-size:16px;
+}
+.sh5vp_skin_select {
+	float:left;
+	width:400px;
+	height:60px;
+	margin: 10px 20px 10px 0px;
+	padding: 20px 20px 20px 20px;
+	border:2px dashed #CCCCCC;
+	cursor:pointer;
+	display:block;
+	color:#AAA;
+	font-weight:bold;
+}
+.sh5vp_skin_select:hover {
+	border:2px solid #F00;
+}
+.sh5vp_skin_select.active {
+	border:2px solid #21759B;
+	color:#21759B;
+	cursor:default;
+}
+.sh5vp_skin_select_box {
+	height:auto;
+}
+.sh5vp_form h3 {
+	margin-top:25px;
+}

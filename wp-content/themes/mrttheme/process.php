@@ -1,6 +1,6 @@
 <?php
-if ((isset($_POST['name'])) && (strlen(trim($_POST['name'])) > 0)) {
-	$name = stripslashes(strip_tags($_POST['name']));
+if ((isset($_POST['firstname'])) && (strlen(trim($_POST['firstname'])) > 0)) {
+	$name = stripslashes(strip_tags($_POST['firstname']));
 } else {$name = 'No name entered';}
 if ((isset($_POST['email'])) && (strlen(trim($_POST['email'])) > 0)) {
 	$email = stripslashes(strip_tags($_POST['email']));
@@ -18,7 +18,7 @@ ob_start();
 <body>
 <table width="550" border="1" cellspacing="2" cellpadding="2">
   <tr bgcolor="#eeffee">
-    <td>Name</td>
+    <td>First Name</td>
     <td><?=$name;?></td>
   </tr>
   <tr bgcolor="#eeeeff">
@@ -35,8 +35,8 @@ ob_start();
 <?
 $body = ob_get_contents();
 
-$to = 'someone@example.com';
-$email = 'email@example.com';
+$to = 'Editor';
+$email = 'nmortelli@gmail.com';
 $fromaddress = "you@example.com";
 $fromname = "Online Contact";
 
