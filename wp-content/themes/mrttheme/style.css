@@ -37,9 +37,6 @@ header{
         vertical-align:baseline;
         background:#FFF;
 	}
-img, object, embed{
-	max-width:98%
-	}
 img{
 	height:auto
 	}
@@ -514,6 +511,8 @@ h1 {
   font-size: 26px;
   }
 h2 {
+  text-align:center;
+  color:#574E3D;
   font-size: 23px;
   }
 h3 {
@@ -685,6 +684,19 @@ html, body{
 	background-repeat:repeat-x;
 	background-position:0% 100%;
 	padding:4px 0px 0px 0px;
+}
+p.btn-txt{
+  text-align:center;
+  color:#574E3D;
+  font-family:"CenturyGothicReg";
+  font-size:14px;
+}
+div.call-to{
+width:100%;
+}
+img.call-to{
+vertical-align: middle;
+border: 0px none;
 }
 /*slider style*/
 .slider{

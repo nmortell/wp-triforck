@@ -1,0 +1,37 @@
+/* This stylesheet is used to style the public view of the widget. */
+
+/*--------------------------------------------------
+			SHARE
+---------------------------------------------------*/
+ul.share{
+	width:100%;
+	float: left;
+	margin: 0;
+	margin-top: 5px;
+	padding: 0;
+	list-style-type:none;
+}
+ul.share li {
+	float:left;
+	margin-bottom: 7px;
+}
+ul.share li.twitter {
+	width:157px;
+	height: 40px;
+	padding: 0px 0 0 14px;
+}
+ul.share li.facebook {
+	width:156px;
+	height: 40px;
+	padding: 0px 0 0 17px;
+}
+ul.share li.googleplus {
+	width:156px;
+	height: 40px;
+	padding: 0px 0 0 17px;
+}
+ul.share li.pinterest {
+	width:156px;
+	height: 40px;
+	padding: 0px 0 0 17px;
+}
