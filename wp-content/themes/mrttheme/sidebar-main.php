@@ -37,12 +37,12 @@
 		</a>
         </div>
 </div>
-<div class="horizontal-grey"></div>
-<div class="sidebar span8">
+<div class="span12 horizontal-grey"></div>
+<div class="sidebar span12">
 <?php if (!dynamic_sidebar('Video-bar')) : ?>
 <?php endif; ?>
 </div>
-<div class="horizontal-grey"></div>
+<div class="span12 horizontal-grey"></div>
 <div class="sidebar">
 	<div class="row-fluid span12">
 	<div class="span6">
@@ -55,7 +55,7 @@
 	</div>
 	</div>
 </div>
-<div class="horizontal-grey"></div>
+<div class="span12 horizontal-grey"></div>
 <div class="sidebar">
 <?php if (!dynamic_sidebar('Top-Stories')) : ?>
 <?php endif; ?>

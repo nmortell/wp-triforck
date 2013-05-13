@@ -725,6 +725,28 @@ font-weight: normal !important;
 }
 
 /***********************************/
+/*
+ *video player 
+ *
+ **/
+
+li.ytccell-1,li.ytccell-2,li.ytccell-3,li.ytccell-4,li.ytccell-5,li.ytccell-6{
+/*width: 25% !important;
+width:-webkit-calc(100%/4) !important;
+width calc(100%/4) !important;*/
+width:150px !important;
+}
+a.ytclink{
+color:#574E3D;
+font-family:"BookmanOldStyleBold";
+font-size: 20px ;
+}
+div.ytctdescription{
+color:#574E3D;
+font-family:"CenturyGothicReg";
+font-size: 14px;
+}
+/***********************************/
 .breadcrumb{
 	padding-top:10px;
 	}
