@@ -56,8 +56,10 @@
 	</div>
 </div>
 <div class="span12 horizontal-grey"></div>
-<div class="sidebar">
+<div class="span12">
+<div class="sidebar top-story">
 <?php if (!dynamic_sidebar('Top-Stories')) : ?>
 <?php endif; ?>
+</div>
 </div>
 </div>
