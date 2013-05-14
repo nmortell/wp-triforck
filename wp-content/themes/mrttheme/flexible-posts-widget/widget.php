@@ -17,7 +17,7 @@ if( $flexible_posts->have_posts() ):
 	<ul class="dpe-flexible-posts volunteer-post">
 	<?php while( $flexible_posts->have_posts() ) : $flexible_posts->the_post(); global $post; ?>
 		<li id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<a href="<?php echo the_permalink(); ?>">
+			<a id="volunteer-post-link"href="<?php echo the_permalink(); ?>">
 				<div class="volunteer-thumb"><?php
 					if( $thumbnail == true ) {
 						// If the post has a feature image, show it
@@ -34,6 +34,7 @@ if( $flexible_posts->have_posts() ):
 			<div class="volunteer-text">
 				<h4 class="title"><?php the_title(); ?></h4>
 				<p id="volunteer-excerpt"><?php the_excerpt(); ?></p>
+			<input type="button" value="Be Our Volunteer" id="volunteer-btn" />
 			</div>
 			
 		</li>
@@ -57,9 +58,6 @@ if( $flexible_posts->have_posts() ):
 			<input type="submit" class="button-primary" value="<?php _e('Update Options', 'formidable')?>"/>
 		  </form>
 		</div>
-		<div>
-			<input type="button" value="Be Our Volunteer" id="volunteer-btn" />
-		</div>	
 	<?php endwhile; ?>
 	</ul><!-- .dpe-flexible-posts -->
 <?php else: // We have no posts ?>

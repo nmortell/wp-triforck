@@ -10,6 +10,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <title><?php wp_title(); ?></title>
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="<?php echo get_theme_root_uri(); ?>/mrttheme/MyFontsWebfontsKit.css"/>
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="all" />
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css"/>
