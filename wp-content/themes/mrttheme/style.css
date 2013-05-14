@@ -677,11 +677,11 @@ html, body{
 	min-height: 100%;
 	padding:15px 15px 0px 15px;
 	margin 0 auto -4em;
-	background-color: #FFFFFF !important;
+	background-color: #F9F7F2 !important;
 	}
 .horizontal-grey{
 	background-image:url('images/four_px_grey_gradient.png');
-	background-repeat:repeat-x;
+	background-repeat:repeat;
 	background-position:0% 100%;
 	padding:4px 0px 0px 0px;
 }
@@ -746,6 +746,30 @@ color:#574E3D;
 font-family:"CenturyGothicReg";
 font-size: 14px;
 }
+/***********************************/
+/*
+ *top stories
+ **/
+
+div.top-story li{
+	margin-right: 15px;
+	text-align:left;
+	float:left;
+	list-style-type:none !important;
+	display:inline !important;
+}
+div.top-story li:first-child{
+margin-left:10px;
+}
+p.post-excerpt{
+	width:200px;
+	color:#019BD9;
+}
+div.top-story h3{
+	margin-bottom:10px;
+	margin-top:10px;
+}
+
 /***********************************/
 .breadcrumb{
 	padding-top:10px;
