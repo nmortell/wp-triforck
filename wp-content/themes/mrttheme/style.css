@@ -43,7 +43,7 @@ img{
 body{
 	color:#574E3D;
 	font-size:16px;
-	font-family:'CenturyGothicReg';
+	font-family:'CenturyGothic';
 	background:#fff;
 	word-wrap:break-word;
 	}
@@ -363,7 +363,7 @@ table#wp-calendar th{
 a.post-title{
 	color:#019BD9;
 	font-style: normal;
-	font-family: "CenturyGothicReg" !important;
+	font-family: "CenturyGothic" !important;
 	font-size:14px !important;
 }
 div.post-entry{
@@ -454,42 +454,47 @@ src: url('font/droid/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
 font-weight:normal;
 font-style:normal;
 }
-@font-face{
-font-family: 'BookmanOldStyleReg/';
+ 
+/*@font-face {
+font-family: 'BookmanOldStyle/';
 src: url('font/BookOS/26D3C8_0_0.eot');
 src: url('font/BookOS/26D3C8_0_0.eot?#iefix') format('embedded-opentype'),
 	url('font/BookOS/26D3C8_0_0.woff') format('woff'),
 	url('font/BookOS/26D3C8_0_0.ttf') format('truetype'),
 	url('font/BookOS/26D3C8_0_0.svg') format('svg');
 font-weight:normal;
-font-style:normal;}
-@font-face{
-font-family: 'BookmanOldStyleBold/';
+font-style:normal;
+}
+@font-face {
+font-family: 'BookmanOldStyle/';
 src: url('font/BookOS/26D3C8_1_0.eot');
 src: url('font/BookOS/26D3C8_1_0.eot?#iefix') format('embedded-opentype'),
         url('font/BookOS/26D3C8_1_0.woff') format('woff'),
         url('font/BookOS/26D3C8_1_0.ttf') format('truetype'),
         url('font/BookOS/26D3C8_1_0.svg') format('svg');
 font-weight:normal;
-font-style:normal;}
-@font-face{
-font-family: 'CenturyGothicReg/';
-src: url('font/CentruyG/26D3C8_2_0.eot');
-src: url('font/CenturyG/26D3C8_2_0.eot?#iefix') format('embedded-opentype'),
-        url('font/CenturyG/26D3C8_2_0.woff') format('woff'),
-        url('font/CenturyG/26D3C8_2_0.ttf') format('truetype'),
-        url('font/CenturyG/26D3C8_2_0.svg') format('svg');
-font-weight:normal;
-font-style:normal;}
-@font-face{
-font-family: 'CenturyGothicBold/';
+font-style:normal;
+}
+@font-face {
+font-family: 'CenturyGothic/';
 src: url('font/CentruyG/26D3C8_3_0.eot');
 src: url('font/CenturyG/26D3C8_3_0.eot?#iefix') format('embedded-opentype'),
         url('font/CenturyG/26D3C8_3_0.woff') format('woff'),
         url('font/CenturyG/26D3C8_3_0.ttf') format('truetype'),
         url('font/CenturyG/26D3C8_3_0.svg') format('svg');
 font-weight:normal;
-font-style:normal;}
+font-style:normal;
+}
+@font-face {
+font-family: 'CenturyGothic/';
+src: url('font/CentruyG/26D3C8_2_0.eot');
+src: url('font/CenturyG/26D3C8_2_0.eot?#iefix') format('embedded-opentype'),
+        url('font/CenturyG/26D3C8_2_0.woff') format('woff'),
+        url('font/CenturyG/26D3C8_2_0.ttf') format('truetype'),
+        url('font/CenturyG/26D3C8_2_0.svg') format('svg');
+font-weight:normal;
+font-style:normal;
+}*/
 @font-face {
 font-family: 'DroidSansBold';
 src: url('font/droid/DroidSans-Bold-webfont.eot');
@@ -503,7 +508,7 @@ font-style:normal;
 h1, h2, h3, h4, h5, h6,.main-nav,.selectnav,
 #pagenavi,.readmore,.social,.next-post,.prev-post,.breadcrumb,
 .tombolkomentar,.copyright,#wp-calendar caption,#search-button{
-	font-family: 'BookmanOldStyleBold';
+	font-family: 'BookmanOldStyle';
 	}
 h1, h2, h3, h4, h5, h6,.readmore{
 	}
@@ -530,7 +535,7 @@ h6 {
   font-size: 13px;
   }
 p{
-  font-family:'CenturyGothicReg';
+  font-family:'CenturyGothic';
   font-size:14px;
 }
 #main h1,
@@ -547,7 +552,7 @@ p{
 }
 .menu-item a{
 	color:#FFF !important;
-	font:normal 11px "CenturyGothicBold" bold;
+	font:normal 11px "CenturyGothic" bold;
 }
 /* Layout
 ------------------------------------------------------------- */
@@ -677,18 +682,25 @@ html, body{
 	min-height: 100%;
 	padding:15px 15px 0px 15px;
 	margin 0 auto -4em;
-	background-color: #F9F7F2 !important;
+	background-color: #FFFFFF !important;
 	}
+section.maincontent h3{
+	margin-top: 10px;
+}
+section.maincontent div.sidebar{
+	margin-left:0px !important;
+}
 .horizontal-grey{
 	background-image:url('images/four_px_grey_gradient.png');
-	background-repeat:repeat;
+	background-repeat:repeat-x;
 	background-position:0% 100%;
 	padding:4px 0px 0px 0px;
+	margin-left:0px !important;
 }
 p.btn-txt{
   text-align:center;
   color:#574E3D;
-  font-family:"CenturyGothicReg";
+  font-family:"CenturyGothic";
   font-size:14px;
 }
 div.call-to{
@@ -696,6 +708,7 @@ width:100%;
 }
 img.call-to{
 vertical-align: middle;
+margin-left:30px;
 border: 0px none;
 }
 /*slider style*/
@@ -738,12 +751,12 @@ width:150px !important;
 }
 a.ytclink{
 color:#574E3D;
-font-family:"BookmanOldStyleBold";
+font-family:"BookmanOldStyle";
 font-size: 20px ;
 }
 div.ytctdescription{
 color:#574E3D;
-font-family:"CenturyGothicReg";
+font-family:"CenturyGothic";
 font-size: 14px;
 }
 /***********************************/
@@ -762,7 +775,7 @@ div.top-story li:first-child{
 margin-left:10px;
 }
 p.post-excerpt{
-	width:200px;
+	width:90.90909090%;
 	color:#019BD9;
 }
 div.top-story h3{
@@ -1178,14 +1191,16 @@ div.comment-content li{
 /* sidebar
 ----------------------------------------------- */
 .sidebar-wrapper{
-	padding-top:50px;
 	word-break:break-word;
 	line-height:1.5em;
 	color:#A59E91;
 	}
+.sidebar-wrapper div.advert h3{
+	font-size:10px;
+	line-height:20px !important;
+}
 .sidebar-wrapper h3{
-	margin:15px 0;
-	letter-spacing:1.2px;
+	margin: 0px;
 	}
 .sidebar{
 	margin-bottom:20px;
@@ -1231,13 +1246,43 @@ a.rsswidget{
 /*Volunteer of the month styles*/
 .volunteer-post{
 position:center;
+margin-bottom:22px;
+}
+#volunteer-btn{
+	background:#B2E1F4;
+	color:#019BD9;
+	border:none;
+	font-family:"BookmanOldStyle";
+	font-size:13px;
+	font-weight:bold;
+}
+a#volunteer-post-link{
+	display:inline;
+	width:100px !important;
 }
 .volunteer-thumb{
-float:left;
+	width:100px !important;
+	float:left;
+	margin:4px 20px 20px 20px;
 }
-.volunteer-text,.title{
-font-family:'CenturyGothicBold';
-font-size:
+.volunteer-text h4{
+	font-family:'CenturyGothic' !important;
+	font-size:14px;
+}
+.volunteer-text{
+	text-align:left;
+	height:140px !important;
+        width:160px !important;
+	padding-right:60px;
+	float:left;
+}
+.volunteet-text p{
+	font-family:'CenturyGothic';
+	font-size:14px;
+	max-width:160px !important;
+	max-height:160px !important;
+	min-height:140px !important;
+	min-width 120px !important;
 }
 #volunteer-excerpt{
 float:right;
@@ -1479,7 +1524,7 @@ div.btn-o{
 }
 #info-banner{
 	color: #D2CEC7;
-	font: normal 11px 'CenturyGothicReg';
+	font: normal 11px 'CenturyGothic';
 	margin-top:0px;
 	background-color:#574E3D;
 }
