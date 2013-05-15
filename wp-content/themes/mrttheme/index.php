@@ -5,14 +5,14 @@
  */
 get_header(); ?>
 </div>
-<div class="row-fluid">
+<div class="row">
 <section class="span1">
   <div class = sidebar>
    <?php if (!dynamic_sidebar('LeftSidebar')) : ?>
    <?php endif; ?>
   </div>
 </section>
-<section class="span8 maincontent">
+<section class="span9 maincontent">
   <div class="slider">
     <?php echo do_shortcode("[slider id='42' name='Main Page Slider']");?>
   </div>
