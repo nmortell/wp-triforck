@@ -98,9 +98,11 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div class="row nav-color">
+<div class="nav-color"></div>
+<div class="container">
+<div class="row">
 <section>
-<div class="offset1">
+<div class="mrt-nav offset1">
 <?php wp_nav_menu( array( 
 'theme_location' => 'primary', 
 'container' => 'nav', 

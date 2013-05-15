@@ -131,6 +131,7 @@ function dknote_footer_setup (){
   </div>
 </section>
 <?php wp_footer(); ?>
+</div>
 </body>
 </html>
 <?php

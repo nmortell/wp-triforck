@@ -5,7 +5,7 @@
  */
 ?>
 <div class="row" id="mrt-header">
-	<div class="span9 offset1 werebuild-header">
+	<div class="span8 offset1 werebuild-header">
 			<div id="werebuild-logo">
 				<img src="<?php echo get_theme_root_uri()?>/mrttheme/images/werebuild-logo.png" alt="We Rebuild Logo" />
 			</div>

@@ -5,7 +5,7 @@
  *
  */
 ?>
-<div class="sidebar row span9">
+<div class="sidebar row span8">
 <!--get involved content, no drag and drop-->
 	<div class="span2 call-to">
 		<img class="call-to" src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/community-btn.png"/>
@@ -36,26 +36,26 @@
 		</a>
         </div>
 </div>
-<div class="span9 horizontal-grey"></div>
-<div class="sidebar span9">
+<div class="span8 horizontal-grey"></div>
+<div class="sidebar span8">
 <?php if (!dynamic_sidebar('Video-bar')) : ?>
 <?php endif; ?>
 </div>
-<div class="span9 horizontal-grey"></div>
+<div class="span8 horizontal-grey"></div>
 <div class="sidebar">
-	<div class="row-fluid span12">
+	<div class="row span8">
 	<div class="span4">
 		<?php if (!dynamic_sidebar('instagram-bar')) : ?>
 		<?php endif; ?>
 	</div>
-	<div class="span4 offset1">
+	<div class="span4">
 		<?php if (!dynamic_sidebar('twitter-bar')) : ?>
 		<?php endif; ?>
 	</div>
 	</div>
 </div>
-<div class="span9 horizontal-grey"></div>
-<div class="span9">
+<div class="span8 horizontal-grey"></div>
+<div class="span8">
 <div class="sidebar top-story">
 <?php if (!dynamic_sidebar('Top-Stories')) : ?>
 <?php endif; ?>

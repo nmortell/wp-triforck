@@ -10,7 +10,7 @@
  <?php endif; ?>
 </div>
 <div class="horizontal-grey span3"></div>
-<div class="sidebar span3 ">
+<div class="sidebar volunteer-sidebar span3 ">
   <?php if (!dynamic_sidebar('Sidebar2')) : ?>
   <?php endif; ?>
 </div>

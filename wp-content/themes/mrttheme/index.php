@@ -4,7 +4,6 @@
  * @since dkNote 1.0
  */
 get_header(); ?>
-</div>
 <div class="row">
 <section class="span1">
   <div class = sidebar>
@@ -12,7 +11,7 @@ get_header(); ?>
    <?php endif; ?>
   </div>
 </section>
-<section class="span9 maincontent">
+<section class="span8 maincontent">
   <div class="slider">
     <?php echo do_shortcode("[slider id='42' name='Main Page Slider']");?>
   </div>
