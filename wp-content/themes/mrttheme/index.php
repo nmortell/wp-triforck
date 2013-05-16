@@ -22,5 +22,5 @@ get_header(); ?>
 </div>
 <div class="push"></div>
 </section>
-<section class="footer">
+<!--<section class="footer">-->
 <?php get_footer(); ?>

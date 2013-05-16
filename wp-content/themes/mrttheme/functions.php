@@ -84,6 +84,7 @@ function dknote_setup() {
 add_action('dknote_my_footer','dknote_footer_setup');
 function dknote_footer_setup (){
 ?>
+</div>
 <!-- 4-color responsive banner-->
 <div class="row-fluid">
 	<div class="span12 banner">
@@ -123,15 +124,15 @@ function dknote_footer_setup (){
         </div>
 </div>
 <!-- copyright section-->
-  <div class="row-fluid" id="info-banner">
+  <div class="terms-color" id="info-banner">
 	<div class="span12">
 		<p align="center" style="color:#A59E91;">© Copyright 2013. <a href="http://www.meredith.com">Meredith Corporation.</a> All Rights Reserved | <a href="http://www.meredith.com/privacy.html">Privacy Policy</a> | By usin the site, you agree to our <a href="http://www.meredith.com/Visitoragreement.html">Terms of Service.</a></p>
 	</div>
+  <!--<div class="terms-color"></div>-->
   </div>
   </div>
-</section>
+<!--</section>-->
 <?php wp_footer(); ?>
-</div>
 </body>
 </html>
 <?php

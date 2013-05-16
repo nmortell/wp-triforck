@@ -20,11 +20,6 @@
  <?php endif; ?>
 </div>
 <div class="horizontal-grey span3"></div>
-<div class="sidebar span3">
- <?php if (!dynamic_sidebar('Sidebar4')) : ?>
- <?php endif; ?>
-</div>
-<div class="horizontal-grey span3"></div>
 <div class="sidebar advert span3">
  <?php if (!dynamic_sidebar('Sidebar5')) : ?>
  <?php endif; ?>

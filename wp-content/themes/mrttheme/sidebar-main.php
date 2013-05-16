@@ -7,33 +7,38 @@
 ?>
 <div class="sidebar row span8">
 <!--get involved content, no drag and drop-->
+	<h3 class="call-to">get involved</h3>
 	<div class="span2 call-to">
-		<img class="call-to" src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/community-btn.png"/>
 		<a>
+		<img class="call-to" src="http://127.0.0.1:9040/wp-content/theme		s/mrttheme/images/community-btn.png"/>
+		</a>
 			<h2>Community</h2>
 			<p class="btn-txt">Lorem ipsum dolor sit cons ectetur ad			ipiscing.</p>
-		</a>
+			<a href="">See More</a>
 	</div>
 	<div class=" call-to span2">
-		<img class="call-to" src="http://127.0.0.1:9040/wp-content/theme		s/mrttheme/images/homes-btn.png"/>
 		<a>
+			<img class="call-to" src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/homes-btn.png"/>
+		</a>
 			<h2>Homes</h2>
 			<p class="btn-txt">Phasellus quis lectus at posuere neque.</p>
-		</a>
+			<a href="">See More</a>
         </div>
 	<div class="call-to span2">
-		<img class="call-to" src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/volunteer-btn.png"/>
 		<a>
+			<img class="call-to" src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/volunteer-btn.png"/>
+		</a>
 			<h2>Volunteer</h2>
 			<p class="btn-txt">Lorem ipsum dolor sit cons ectetur adipiscing.</p>
-		</a>
+		<a href="">See More</a>
         </div>
 	<div class="call-to span2">
-		<img class="call-to"src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/donate-btn.png"/>
 		<a>
+			<img class="call-to"src="http://127.0.0.1:9040/wp-content/themes/mrttheme/images/donate-btn.png"/>
+		</a>
 			<h2>Donate</h2>
 			<p class="btn-txt">Phasellus quis lectus at psuere neque.</p>
-		</a>
+		<a href="">See More</a>
         </div>
 </div>
 <div class="span8 horizontal-grey"></div>
@@ -55,7 +60,7 @@
 	</div>
 </div>
 <div class="span8 horizontal-grey"></div>
-<div class="span8">
+<div class="span8 top-story-margin">
 <div class="sidebar top-story">
 <?php if (!dynamic_sidebar('Top-Stories')) : ?>
 <?php endif; ?>

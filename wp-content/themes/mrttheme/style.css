@@ -374,6 +374,7 @@ div.post-entry{
 ------------------------------------------------------------- */
 .container{
 	width:1250px !important;
+	height:auto;
 }
 .kosong{
 	clear:both;
@@ -623,6 +624,10 @@ html, body{
 .selectnav {
 	display: none;
 	}
+.main-nav a:hover{
+	background:none !important;
+	text-decoration:underline !important;
+}
 .main-nav ul li a{
 	border:none !important;
 	font-family:"CenturyGothic";
@@ -745,8 +750,17 @@ p.btn-txt{
   font-family:"CenturyGothic";
   font-size:14px;
 }
+/* call-to */
 div.call-to{
-	margin:20px 0px 0px 20px !important;
+	margin:0px 0px 0px 20px !important;
+}
+div.call-to a{
+	color:#019BD9;
+	text-align:center;
+	display:block;
+}
+h3.call-to{
+	margin:0px !important;
 }
 img.call-to{
 vertical-align: middle;
@@ -845,15 +859,17 @@ div.AlpinePhotoTiles_parent_class{
  **/
 
 div.top-story li{
-	width:245px !important;
-	margin-right: 20px;
+	width:240px !important;
+	margin-right: 10px;
 	text-align:left;
 	float:left;
 	list-style-type:none !important;
 	display:inline !important;
 }
+div.top-story-margin{
+	margin-left:15px !important;
+}
 div.top-story li:first-child{
-margin-left:10px;
 }
 p.post-excerpt{
 	width:90.90909090%;
@@ -1406,12 +1422,17 @@ div.btn-o{
 	background: rgba(231, 231, 231, 0.6);
 	box-shadow: 5px 5px 0 0px rgba(0, 0, 0, .3);
     }
+span.mr_social_sharing, span.mr_social_sharing_top{
+	display:block !important;
+}
 span.mr_social_sharing:nth-child(5){
 	margin-top:10px;
 }
 .mr_social_sharing_wrapper{
 	margin-left:15px !important;
 	text-align:center;
+	position:fixed;
+	left:-45% !important;
 }
 .social-bar ul{
 	margin: 0;
@@ -1573,12 +1594,29 @@ span.mr_social_sharing:nth-child(5){
 
 /* footer
 ----------------------------------------------- */
+div.footer{
+	position:absolute;
+}
 .banner{
 	margin-bottom:0px !important;
 	float:right;
 	display:inline;
 	background-color: #695E4A;
 	}
+.product-color{
+	width:100%;
+	height:215px;
+	margin:0px auto;
+	z-index:-1;
+	background-color:#695E4A;
+}
+.terms-color{
+	width:100%;
+	height:36px;
+	margin:0px auto;
+	z-index:-1;
+	background-color:#574E3D;
+}
 #redBanner{
 	position: absolute;
 	width:25%;
