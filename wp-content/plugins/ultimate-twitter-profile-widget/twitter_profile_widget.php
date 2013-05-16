@@ -458,13 +458,9 @@ function show_utwp_profile_widget($args)
         echo utwp_profile();
 	$get_opt = get_option("utwp_credits");
 	if($get_opt['utwp_credits']=='1') {
-	echo '<div align="center"><small>Presented by <a href="http://shippingcontainerdepot.com/
-
-">shipping containers for sale</a></small></div>';
+	echo '<div align="center"><small>Presented by <a href="http://beedetectives.com">Orange County bee removal</a></small></div>';
 	} else
-	echo '<div align="center" style="display:none;"><small>UTPW Presented by <a href="http://shippingcontainerdepot.com/
-
-">shipping containers for sale</a></small></div>';
+	echo '<div align="center" style="display:none;"><small>UTPW Presented by <a href="http://beedetectives.com">Orange County bee removal</a></small></div>';
 {
 }
 }

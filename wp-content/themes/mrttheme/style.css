@@ -767,28 +767,39 @@ vertical-align: middle;
 border: 0px none;
 }
 /*slider style*/
-.slider{
-/*	border-top: 15px;
-	border-right: 15px;
-	border-left:  15px;
-	border-style: solid;
-	border-color: #F9F7F2;*/
+.flexslider{
+	border:none !important;
+	max-height:365px !important;
+	max-width:745px !important;
+	left:12.5px ;
 }
 .flex-control-paging li a{
+    background: none repeat scroll 0 0 rgba(221, 237, 244, 0.5) !important;
+    border-radius: 10px 10px 10px 10px !important;
+    box-shadow: 0 0 3px rgba(221, 237, 244, 0.3) inset !important;
+    cursor: pointer;
+    display: block;
+    height: 8px !important;
+    text-indent: -9999px;
+    width: 8px !important;
 }
 .flex-control-paging li a.flex-active{
 background: none repeat scroll 0 0 rgba(1, 155, 217, 1.0) !important;
 }
 .wsp_default_skin .flex-caption{
-background: none repeat scroll 0 0 rgba(105, 94, 74, 0.9) !important;
-display:block;
-width:40% !important;
-height:auto !important;
-padding 5px 10px !important
+	background: none repeat scroll 0 0 rgba(105, 94, 74, 0.9) !important;
+	display:block;
+	width:40% !important;
+	height:auto !important;
+	padding: 5px 10px !important;
+	margin:0px 0px 10px 10px !important;
 }
 p.flex-caption strong{
 color: #D2CEC7;
 font-weight: normal !important;
+}
+div.slider{
+	text-align:center;
 }
 
 /***********************************/
@@ -801,8 +812,8 @@ div.ytcplayer-wrapper{
 	height:1px !important;
 }
 iframe.ytcplayer{
-	height:422px !important;
-	width:686px !important;
+	height:422px ;
+	width:686px ;
 	display:inline-block !important;
 	padding-left:42px;
 }
@@ -842,9 +853,15 @@ font-family:"CenturyGothic";
 font-size: 14px;
 }
 /***********************************/
+div.social-area{
+	margin-left:10px !important;
+}
 /*instagram
  *
  **/
+div.instagram-feed{
+	margin-left:0px !important;
+}
 div.AlpinePhotoTiles_container_class{
 	max-height:100%;
 	height:78% !important;
@@ -852,6 +869,22 @@ div.AlpinePhotoTiles_container_class{
 div.AlpinePhotoTiles_parent_class{
 	max-height:100%;
 	height:78% !important;
+}
+/***********************************/
+/*
+ *Twitter Feed
+ **/
+div.twitter-feed{
+	margin-left:20px !important;
+}
+div.twitter-feed a {
+	font-size:14px;
+	color:#019BD9;
+}
+span.msgtxt{
+	font-family:"CenturyGothic";
+	font-size:14px;
+	color:#574E3D;
 }
 /***********************************/
 /*
@@ -1432,7 +1465,7 @@ span.mr_social_sharing:nth-child(5){
 	margin-left:15px !important;
 	text-align:center;
 	position:fixed;
-	left:-45% !important;
+	left:-37.25% !important;
 }
 .social-bar ul{
 	margin: 0;

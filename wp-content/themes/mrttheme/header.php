@@ -94,6 +94,41 @@
 	  		$("#volunteer-form").dialog("open");	 
 		});
 	});
+
+	/*keeps the slider centered*/
+	$(function(){
+		$(".flexslider").css("left", function(i){
+			var sliderWidth = $(".slider").width();
+			var flexWidth = $(".flexslider").width();
+			if(sliderWidth <= flexWidth){
+				i = 0;
+			}
+			else{
+			i = ($(".slider").width()/2)-($(".flexslider").width()/2);
+			}
+			return i;
+		});	
+	});
+	$(function(){
+		$(".ytcplayer").css("cssText",function(i){
+			var container = $(".videoplayer").width();
+			var windowWidth = $(window).width();
+			console.log($(document).width());
+			console.log(windowWidth);
+			console.log(container);
+			if(windowWidth > 967){
+				i = 'width: 686px !important; height: 422px !important;';
+			}
+			else{
+				i = 'width: '+container+'px !important; padding-left:0px !important;';
+			}
+			return i;
+		});
+	});
+/**********Twitter Feed Cleanup function**********************/
+	$(function(){
+		$('.avatar').remove();
+	});
 </script>
 <?php wp_head(); ?>
 </head>
