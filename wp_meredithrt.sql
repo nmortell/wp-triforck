@@ -1095,7 +1095,7 @@ CREATE TABLE `wp_sam_places` (
 
 LOCK TABLES `wp_sam_places` WRITE;
 /*!40000 ALTER TABLE `wp_sam_places` DISABLE KEYS */;
-INSERT INTO `wp_sam_places` VALUES (1,'','300 x 250 DART ad for Sidebar1','','','300x250',0,0,'http://127.0.0.1:9040/wp-content/plugins/sam-images/300x250.png','http://www.meredith.com/','',0,'',0,891,0),(2,'','Rebuilding Promotional ad static image in sidebar4','','','custom',300,160,'http://127.0.0.1:9040/wp-content/plugins/sam-images/300x160.png','http://www.rebuildingtogether.org/','',0,'',0,771,0),(3,'','DART ad Unit 300 x 600 tower ad. place in sidebar5','','','custom',300,600,'http://127.0.0.1:9040/wp-content/plugins/sam-images/300600adgoogle.jpg','http://www.meredith.com/','',0,'',0,887,0);
+INSERT INTO `wp_sam_places` VALUES (1,'','300 x 250 DART ad for Sidebar1','','','300x250',0,0,'http://127.0.0.1:9040/wp-content/plugins/sam-images/300x250.png','http://www.meredith.com/','',0,'',0,940,0),(2,'','Rebuilding Promotional ad static image in sidebar4','','','custom',300,160,'http://127.0.0.1:9040/wp-content/plugins/sam-images/300x160.png','http://www.rebuildingtogether.org/','',0,'',0,771,0),(3,'','DART ad Unit 300 x 600 tower ad. place in sidebar5','','','custom',300,600,'http://127.0.0.1:9040/wp-content/plugins/sam-images/300600adgoogle.jpg','http://www.meredith.com/','',0,'',0,936,0);
 /*!40000 ALTER TABLE `wp_sam_places` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1461,4 +1461,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-05-16 23:16:18
+-- Dump completed on 2013-05-17  3:42:30

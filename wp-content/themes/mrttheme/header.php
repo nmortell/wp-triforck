@@ -113,9 +113,6 @@
 		$(".ytcplayer").css("cssText",function(i){
 			var container = $(".videoplayer").width();
 			var windowWidth = $(window).width();
-			console.log($(document).width());
-			console.log(windowWidth);
-			console.log(container);
 			if(windowWidth > 967){
 				i = 'width: 686px !important; height: 422px !important;';
 			}
@@ -128,6 +125,16 @@
 /**********Twitter Feed Cleanup function**********************/
 	$(function(){
 		$('.avatar').remove();
+	});
+/*********************nav pointer functions*******************/
+	$(function(){
+		$('.menu li a').each(function(){
+			console.log(window.location.pathname);
+			if('/' == window.location.pathname){
+				$(".menu li a:contains('Home')").parent().addClass('nav-pointer');
+				$(".menu li a:contains('Home Projects')").parent().addClass('nav-no-pointer');
+			}
+		});
 	});
 </script>
 <?php wp_head(); ?>

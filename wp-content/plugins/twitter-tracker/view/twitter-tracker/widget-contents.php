@@ -14,6 +14,9 @@
 			<a target="_blank" class="tweet-link" href="<?php echo esc_url( $tweet->link ); ?>" title="<?php __( 'View tweet', 'twitter-tracker' ); ?>"><?php echo esc_html( $tweet->time_since() );  ?></a>
 		</div>
 	    <p class="clearleft"></p>
+	    <div>
+	    <p class="intent"><a href="https://twitter.com/intent/tweet?">Reply</a>|<a href="https://twitter.com/intent/retweet?">Retweet</a></p>
+	    </div>
 	</li>
 <?php endforeach; ?>
 </ol>

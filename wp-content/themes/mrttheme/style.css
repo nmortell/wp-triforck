@@ -628,6 +628,14 @@ html, body{
 	background:none !important;
 	text-decoration:underline !important;
 }
+.nav-pointer{
+	background-image:url('images/nav-point.png');
+	background-repeat:no-repeat;
+	background-position:bottom;
+}
+.nav-no-pointer{
+	background-image:none;
+}
 .main-nav ul li a{
 	border:none !important;
 	font-family:"CenturyGothic";
@@ -1465,7 +1473,7 @@ span.mr_social_sharing:nth-child(5){
 	margin-left:15px !important;
 	text-align:center;
 	position:fixed;
-	left:-37.25% !important;
+	left:-40% !important;
 }
 .social-bar ul{
 	margin: 0;
