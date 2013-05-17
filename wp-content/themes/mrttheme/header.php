@@ -20,34 +20,6 @@
  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
 <script type="text/javascript">
         $(function(){
-		var firstname = $("#firstname"), lastname = $("#lastname"), email = $("#email"), econfirm = $("#econfirm"), phonenumber = $("#phonenumber"), essay = $("#essay");
-		var allFields = $( [] ).add( firstname ).add( lastname ).add( email ).add( econfirm ).add( phonenumber ).add( essay ); 
-		var tips = $(".validateTips");
-		/*is used by volunteer form to display errors*/
-		function updateTips(t){
-			tips.text(t).addClass("ui-state-highlight");
-			setTimeout(function(){
-			  tips.removeClass("ui-state-highlight", 1500);
-			}, 500);
-		}
-		
-		/*does a length check for volunteer form fields*/
-		function checkLength(o, n, min, max){
-			if(o.val().length > max || o.val().length < min){
-			  o.addClass("ui-state-error");
-			  updateTips("Length of " + n + " must be between " + min + " and " + max + ".");
-			}
-		}
-		function checkRegexp(o, regexp, n){
-			if(!(regexp.test(o.val()))){
-			  o.addClass("ui-state-error");
-			  updateTips(n);
-			  return false;
-			} else{
-			    return true;
-			  }
-		}
-
 		$('#volunteer-form').dialog({
 			autoOpen:false,
 			show:{
@@ -58,43 +30,15 @@
 			  effect:"explode",
 			  duration:1000  
 			},
-			height:450,
-			width:380,
-			modal:true/*,
-			buttons:{
-				"submit": function(){
-				  var bValid = true;
-				  allFields.removeClass("ui-state-error");
-				  bValid = bValid && checkLength(firstname, "first name", 3, 18);
-				  bValid = bValid && checkLength(lastname, "last name", 2, 18);
-			          bValid = bValid && checkLength(essay, "essay", 5, 200);
-				 
-				  	var dataString = 'firstname='+ firstname.val() + '&email=' + email.val() + '&phone=' + phonenumber.val();  
-				
-			
-					  $.ajax({  
-  					  type: "POST",  
-  				 	  url: "wp-content/themes/mrttheme/process.php",  
-  					  data: dataString,  
-  					  success: function() {  
-				    		$('#volunteer-form').html("<div id='message'></div>");  
-    						$('#message').html("<h2>Contact Form Submitted!</h2>")  
-    						.append("<p>We will be in touch soon.</p>")  
-    						.hide()  
-    						.fadeIn(1500, function() {  
-      						  $('#message').append("<img id='checkmark' src='images/check.png' />");  
-    						});  
-  					  }	  
-					});  
-					return false;
-				}
-			}*/});
+			height:645,
+			width:735,
+			modal:true
+			});
 
 		$("#volunteer-btn").button().click(function(){
 	  		$("#volunteer-form").dialog("open");	 
 		});
 	});
-
 	/*keeps the slider centered*/
 	$(function(){
 		$(".flexslider").css("left", function(i){
@@ -133,6 +77,14 @@
 			if('/' == window.location.pathname){
 				$(".menu li a:contains('Home')").parent().addClass('nav-pointer');
 				$(".menu li a:contains('Home Projects')").parent().addClass('nav-no-pointer');
+			}
+		});
+	});
+/**********change social share email img***********************/
+	$(function(){
+		$('div.mr_social_sharing_wrapper img').each(function(){
+			if($(this).attr('alt')=='Share via email'){
+				$(this).parent().replaceWith('<?php if(function_exists('instaemail_show_link')){echo instaemail_show_link();} ?>');
 			}
 		});
 	});

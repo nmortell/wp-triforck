@@ -38,25 +38,8 @@ if( $flexible_posts->have_posts() ):
 			</div>
 			
 		</li>
-		<div id="volunteer-form" title="Be A Volunteer!">
-		  <p class="validateTips">All fields are required.</p>
-		  <form method="post" class="frm_settings_form">
-		  <fieldset>
-			<label for="firstname">First Name</label>
-			<input type="text" name="firstname" id="firstname" class="text ui-widget-context ui-corner-all"/>
-			<label for="lastname">Last Name</label>
-                        <input type="text" name="lastname" id="lastname" class="text ui-widget-context ui-corner-all"/>
-			<label for="email">Email</label>
-			<input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all" />
-			<label for="econfirm>">Confirm Email</label>
-			<input type="text" name="econfirm" id="econfirm" class="text ui-widget-context ui-corner-all"/>
-			<label for="phonenumber">Phone Number</label>
-			<input type="text" name="phonenumber" id="phonenumber" class=""/>
-			<label for="essay">Your Essay</label>
-			<textarea type="" name="essay" id="essay" class="" rows="6" cols="20"></textarea>
-		  </fieldset>
-			<input type="submit" class="button-primary" value="<?php _e('Update Options', 'formidable')?>"/>
-		  </form>
+		<div id="volunteer-form" title="Nominate A Volunteer!">
+			<?php echo do_shortcode("[easy_contact_forms fid=2]");?>
 		</div>
 	<?php endwhile; ?>
 	</ul><!-- .dpe-flexible-posts -->

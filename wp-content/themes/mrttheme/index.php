@@ -13,7 +13,7 @@ get_header(); ?>
 </section>
 <section class="span8 maincontent">
   <div class="slider">
-    <?php echo do_shortcode("[slider id='42' name='Main Page Slider']");?>
+	<?php echo do_shortcode("[slider id='42' name='Main Page Slider']");?>
   </div>
   <div class="horizontal-grey"></div>
    <?php get_sidebar("main"); ?>
