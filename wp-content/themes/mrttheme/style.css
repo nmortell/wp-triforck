@@ -1455,6 +1455,22 @@ form.frm_settings_form textarea{
 	color:#F9F7F2 !important;
 	font-family:"CenturyGothic" !important;
 }
+div.ui-dialog.ui-widget.ui-widget-content{
+}
+div#volunteer-form input{
+	width:700px !important;
+}
+div#volunteer-form{
+	font-family:"CenturyGothic";
+	font-size:13px;
+}
+div.ufo-form button{
+	background-color:#B2E1F4 !important;
+	font-family:"CenturyGothic" !important;
+	font-size:13px !important;
+	color:#019BD9 !important;
+	height:30px;
+}
 
 /**************************************/
 /*Social bar widget style*/
@@ -1491,7 +1507,7 @@ span.mr_social_sharing:nth-child(5){
 	margin-left:15px !important;
 	text-align:center;
 	position:fixed;
-	left:-40% !important;
+	left:-42.5% !important;
 }
 .social-bar ul{
 	margin: 0;

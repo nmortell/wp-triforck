@@ -39,7 +39,7 @@ if( $flexible_posts->have_posts() ):
 			
 		</li>
 		<div id="volunteer-form" title="Nominate A Volunteer!">
-			<?php echo do_shortcode("[easy_contact_forms fid=2]");?>
+			<div class"v-form"><?php echo do_shortcode("[easy_contact_forms fid=2]");?></div>
 		</div>
 	<?php endwhile; ?>
 	</ul><!-- .dpe-flexible-posts -->

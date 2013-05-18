@@ -30,8 +30,8 @@
 			  effect:"explode",
 			  duration:1000  
 			},
-			height:645,
-			width:735,
+			height:495,
+			width:770,
 			modal:true
 			});
 
