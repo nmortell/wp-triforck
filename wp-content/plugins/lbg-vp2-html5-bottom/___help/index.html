@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Help</title>
+<style>
+body {
+	font:13px Arial, Helvetica, sans-serif;
+}
+.lbg_list-1 {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	line-height:27px;
+	margin: 0 0 1.5em 0;	
+}
+
+.lbg_list-1 li {
+	background-image: url(list-1.png);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 25px;
+}
+.lbg_list-1 a { 
+	text-decoration:underline;
+}
+table {
+	background:#EEEEEE;
+	border-right:1px solid #CCCCCC;
+	border-bottom:1px solid #CCCCCC;
+}
+table td {
+	padding:5px;
+	border-left:1px solid #CCCCCC;
+	border-top:1px solid #CCCCCC;
+}
+.row-title {
+	font-weight:bold;
+}
+.lbg_subtitle {
+	color:#21759b;
+	font-weight:bold;
+	font-size:14px;
+}
+.lbg_regGray {
+	font-size:12px;
+	color:#999999;
+	font-style:italic;
+}
+</style>
+</head>
+<body>
+<h2><strong>LambertGroup - HTML5 Video Player with Bottom Playlist and Multiple Skins</strong></h2>
+<p>This plugin requires at least WordPress 3.0</p>
+<ul class="lbg_list-1">
+  <li><a href="#instalation">Plugin Instalation</a></li>
+  <li><a href="#structure">Files &amp; Folders Structure</a></li>
+  <li><a href="#manageplayers">Manage Players</a></li>
+  <li><a href="#settings">Player Settings</a></li>
+  <li><a href="playlist">Playlist</a></li>
+  <li>.<a href="#htaccess">htaccess</a></li>
+  <li><a href="#shortcode">ShortCode</a></li>
+  <li><a href="#videotutorials">Video Tutorials</a></li>
+</ul>
+<p>&nbsp;</p>
+<p class="lbg_subtitle"><a name="instalation" id="instalation"></a>Plugin Instalation</p>
+<p>Step 1. Enter in your wordpress CMS and go to Plugins menu<br />
+Step 2. Under Plugins menu click &quot;Add New&quot;<br />
+Step 3. Select &quot;Upload&quot;, choose the archive lbg-vp2-html5-bottom.zip that you downloaded and hit &quot;Install Now&quot;<br />
+Step 4. After the plugin is installed click &quot;Activate Plugin&quot;<br />
+Step 5. In you page just add the shortcode: [lbg_vp2_html5_bottom settings_id='1']<br />
+<a href="#shortcode">click here</a> for more details regarding the shortcode</p>
+<p>&nbsp;</p>
+<p class="lbg_subtitle"><a name="structure" id="structure"></a>Files &amp; Folders Structure</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="left" valign="top" class="row-title">css</td>
+    <td align="left" valign="top">the folder contains the .css files used by the pluging</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="row-title">images</td>
+    <td align="left" valign="top">the folder contains the images used by the pluging</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="row-title">js</td>
+    <td align="left" valign="top">the folder contains the .js files used by the pluging</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="row-title">lbg_vp2_html5_bottom</td>
+    <td align="left" valign="top">the folder contains the .js &amp; .css files that the video player use. It also contains the &quot;videos&quot; folder where you'll upload the videos in case you'll stream the videos directly from your server</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="row-title">tpl</td>
+    <td align="left" valign="top">the folder contains the template files used by the pluging</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="row-title">lbg-vp2-html5-bottom.php</td>
+    <td align="left" valign="top">the plugin itself</td>
+  </tr>
+  <tr>
+    <td width="22%" align="left" valign="top" class="row-title">&nbsp;</td>
+    <td width="78%" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><span class="lbg_subtitle"><a name="manageplayers" id="playlist2"></a>Manage Players</span></p>
+<p>From this section you can define the players. <br />
+  If you need to include multiple players in your pages with different settings   and playlist you can define the players and manage the settings for each one.<br />
+If you need only one player in your website, just edit the default one.</p>
+<p>&nbsp;</p>
+<p class="lbg_subtitle"><a name="settings" id="settings"></a>Player Settings</p>
+<p>From this section you can define the video player  settings.</p>
+<table>
+  <tr>
+    <td colspan="2" align="left" valign="top" class="lbg_regGray">General Settings</td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">Player Width</td>
+    <td align="left" valign="top">player width</td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">Player Height</td>
+    <td align="left" valign="top">player height</td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">Skin Name</td>
+    <td align="left" valign="top"> available skins:<br />
+      - universalBlack<br />
+      - universalWhite<br />
+      - giant <br />
+      - futuristicElectricBlue<br />
+      - futuristicChrome</td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">Seek Bar Adjust</td>
+    <td align="left" valign="top"><p>This value will reduce the length of seek bar</p>
+      <p>Recommended values: </p>
+      <p>- universalBlack: 240<br />
+        - universalWhite: 240<br />
+        - giant: 410<br />
+        - futuristicElectricBlue: 285<br />
+        - futuristicChrome: 285</p></td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">Show Information Button</td>
+    <td align="left" valign="top">You can show or hide the info button.<br />
+      Possible values: <br />
+      <strong>true</strong> - show info button<br />
+      <strong>false</strong> - hide info button</td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">Preload</td>
+    <td align="left" valign="top">Specifies if and how the author thinks the video should be loaded when the page   loads</td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">Loop Video</td>
+    <td align="left" valign="top">Possible values: <br />
+      <strong>true</strong> - starts next movie after current movie has finished<br />
+      <strong>false</strong> - doesn't start next movie after current movie has finished</td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">Auto Play First Movie</td>
+    <td align="left" valign="top">Possible values: <br />
+      <strong>true</strong> - autoplays first movie<br />
+      <strong>false</strong> - doesn't autoplay first movie</td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">Auto Play</td>
+    <td align="left" valign="top"><strong>true</strong> if you want your video to start when you click on a playlist item<br />
+      <strong>false</strong>if you want your video to load a preview image when you click on a playlist item</td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">Initial Volume Value</td>
+    <td align="left" valign="top">the initial volume value. It takes values between 0-1</td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">Border Width</td>
+    <td align="left" valign="top">the border arround the video player (in px)</td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">Border Color</td>
+    <td align="left" valign="top">the border color (hexa)</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="row-title">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left" valign="top" class="lbg_regGray">Playlist Settings</td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">Thumbs Reflection</td>
+    <td align="left" valign="top">the thumbnail reflection transparency value. It take values from 0-100</td>
+  </tr>
+  <tr class="wp-list-table widefat fixed pages">
+    <td align="left" valign="top" class="row-title">NumberOf Thumbs Per Screen</td>
+    <td align="left" valign="top">number of elements show in the playlist first time</td>
+  </tr>
+  <tr>
+    <td width="220" align="left" valign="top" class="row-title">&nbsp;</td>
+    <td width="77%" align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><span class="lbg_subtitle"><a name="playlist" id="playlist"></a>Playlist</span></p>
+<table>
+  <tr>
+    <td width="24%" align="left" valign="top" class="row-title"></td>
+    <td width="76%" align="left" valign="top"></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="row-title">MP4 file (Chrome, IE, Safari) </td>
+    <td align="left" valign="top">.mp4 file name. The file has to be uploaded:<br />
+      Case 1:
+      on your server in &quot;wp-content/plugins/lbg-vp2-html5-bottom/lbg_vp2_html5_bottom/videos/&quot; folder using a FTP client (or the CPannel or a FTP plugin for Wordpress) <br />
+      Case 2: on another server</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="row-title">WebM</td>
+    <td align="left" valign="top">.webm file name. The file has to be uploaded:<br />
+      Case 1:
+      on your server in &quot;wp-content/plugins/lbg-vp2-html5-bottom/lbg_vp2_html5_bottom/videos/&quot; folder using a FTP client (or the CPannel or a FTP plugin for Wordpress) <br />
+      Case 2: on another server</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="row-title">Movie Title</td>
+    <td align="left" valign="top">movie title</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="row-title">Movie Description</td>
+    <td align="left" valign="top">movie description</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="row-title">Playlist Image</td>
+    <td align="left" valign="top">playlist image</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="row-title">Preview Image</td>
+    <td align="left" valign="top">preview image</td>
+  </tr>
+  <tr>
+    <td align="left" valign="top" class="row-title">&nbsp;</td>
+    <td align="left" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><span class="lbg_subtitle"><a name="htaccess" id="htaccess"></a>.htaccess</span></p>
+<p>For Mozzila and IE9 please use the .htaccess present in the .zip file if the videos are not played.</p>
+<p>&nbsp;</p>
+<p><span class="lbg_subtitle"><a name="shortcode" id="shortcode"></a>ShortCode</span></p>
+<p>The shortcode is: <br />
+[lbg_vp2_html5_bottom settings_id='1']<br />
+where <br />
+settings_id is the player ID defined in &quot;Manage Players&quot; section</p>
+<p>&nbsp;</p>
+<p><span class="lbg_subtitle"><a name="videotutorials" id="videotutorials"></a>Video Tutorials</span></p>
+<p>Step 1: Installation – <a href="http://www.youtube.com/watch?v=vTUWuIXV0L8" target="_blank">http://www.youtube.com/watch?v=vTUWuIXV0L8</a><br />
+  Step 2: Adding The ShortCode – <a href="http://www.youtube.com/watch?v=zpPYO1jzQ7w" target="_blank">http://www.youtube.com/watch?v=zpPYO1jzQ7w</a><br />
+  Step 3: Changing Player Settings – <a href="http://www.youtube.com/watch?v=IOEd1aMAK0M" target="_blank">http://www.youtube.com/watch?v=IOEd1aMAK0M</a><br />
+  Step 4: Player Playlist – <a href="http://www.youtube.com/watch?v=uzu7e49ES3I" target="_blank">http://www.youtube.com/watch?v=uzu7e49ES3I</a><br />
+  Step 5: Adding Multiple Players – <a href="http://www.youtube.com/watch?v=GoKcjhF9u3k" target="_blank">http://www.youtube.com/watch?v=GoKcjhF9u3k</a></p>
+</body>
+</html>
