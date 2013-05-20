@@ -14,6 +14,7 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="all" />
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css"/>
+
 <?php wp_enqueue_script('jquery');?>
 <?php wp_enqueue_script('jquery-ui-core');?>
  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
@@ -54,14 +55,23 @@
 		});	
 	});
 	$(function(){
+		var container = $(".videoplayer").width();
+		var windowWidth = $(window).width();
 		$(".ytcplayer").css("cssText",function(i){
-			var container = $(".videoplayer").width();
-			var windowWidth = $(window).width();
 			if(windowWidth > 967){
 				i = 'width: 686px !important; height: 422px !important;';
 			}
 			else{
 				i = 'width: '+container+'px !important; padding-left:0px !important;';
+			}
+			return i;
+		});
+		$(".adjust").css("cssText", function(i){
+			if(windowWidth > 967){
+				i = 'padding-left: 42px !important; width:686px;';
+			}
+			else{
+				i = 'padding-left:0px !important; width: '+container+';';
 			}
 			return i;
 		});
@@ -72,14 +82,30 @@
 	});
 /*********************nav pointer functions*******************/
 	$(function(){
-		$('.menu li a').each(function(){
-			console.log(window.location.pathname);
-			if('/' == window.location.pathname){
-				$(".menu li a:contains('Home')").parent().addClass('nav-pointer');
-				$(".menu li a:contains('Home Projects')").parent().addClass('nav-no-pointer');
+                        var home = $(".menu li a:contains('Home')").parent();
+                        var home_project = $(".menu li a:contains('Home Projects')").parent();
+                        var community = $(".menu li a:contains('Community Projects')").parent();
+                        console.log(window.location.pathname);
+			console.log(window.location.search);
+                        if('' == window.location.search){
+				home.removeClass('nav-pointer');
+				home_project.removeClass('nav-pointer');
+				community.removeClass('nav-pointer');
+                                home.addClass('nav-pointer');
+                        }
+                        else if('?page_id=2' == window.location.search){
+				home.removeClass('nav-pointer');
+                                home_project.removeClass('nav-pointer');
+                                community.removeClass('nav-pointer');
+                                home_project.addClass('nav-pointer');
+                        }
+			else if('?page_id=122' == window.location.search){
+				home.removeClass('nav-pointer');
+                                home_project.removeClass('nav-pointer');
+                                community.removeClass('nav-pointer');
+                                community.addClass('nav-pointer');
 			}
-		});
-	});
+                });
 /**********change social share email img***********************/
 	$(function(){
 		$('div.mr_social_sharing_wrapper img').each(function(){
@@ -87,6 +113,10 @@
 				$(this).parent().replaceWith('<?php if(function_exists('instaemail_show_link')){echo instaemail_show_link();} ?>');
 			}
 		});
+	});
+/***********video jquery gallery*******************************/
+	$(function(){
+		$('.ytchagallery').before("<div style='height:20px !important; width:100% !important;'><img class='prev-gallery'src='<?php echo get_template_directory_uri(); ?>/images/prev-horizontal.png'/></div>");
 	});
 </script>
 <?php wp_head(); ?>

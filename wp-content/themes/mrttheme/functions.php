@@ -283,6 +283,15 @@ register_sidebar(array(
         'before_title'=>'<h3>',
         'after_title'=>'</h3>'
 ));
+register_sidebar(array(
+        'name'=>__('Homes-Slider','mrt'),
+        'description' =>__('add Homes Page Slider here', 'mrt'),
+        'before_widget' =>'',
+        'after_widget' =>'',
+        'before_title'=>'<h3>',
+        'after_title'=>'</h3>'
+
+));
 }
 
 /**

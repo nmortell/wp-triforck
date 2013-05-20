@@ -45,6 +45,7 @@
 <div class="sidebar span8 videoplayer">
 <?php if (!dynamic_sidebar('Video-bar')) : ?>
 <?php endif; ?>
+<!--<div id="yt_container"></div>-->
 </div>
 <div class="span8 horizontal-grey"></div>
 <div class="sidebar">

@@ -41,8 +41,9 @@ iframe.ytcplayer{
 /*---------------------------------------------------*/
 ul.ytchagallery{margin: 0!important; padding: 0!important;list-style: none!important; width: 100%; overflow: hidden;}
 ul.ytchagallery .ytc-row{width:-webkit-calc(100% + 10px); width:calc(100% + 10px)}
-ul.ytchagallery li{float:left;margin: 0!important;list-style: none!important;padding: 0 10px 10px 0!important;clear: none;}
+ul.ytchagallery li{float:left;margin: 0!important;list-style: none!important;padding: 0 16px 10px 0!important;clear: none;}
 ul.ytchagallery li.ytccell-first{clear: left!important;}
+ul.ytchagallery li.ytccell-last{padding-left: 1px;}
 ul.ytchagallery li .ytcliinner {overflow: hidden;}
 
 	/*Thumbnails*/

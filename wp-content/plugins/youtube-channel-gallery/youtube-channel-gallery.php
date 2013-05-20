@@ -834,7 +834,7 @@ class YoutubeChannelGallery_Widget extends WP_Widget {
 					$plugincount++;
 
 					$content = '<div class="ytcplayer-wrapper ytc-player' . $ytchag_ratio . '"><iframe id="ytcplayer' . $plugincount . '" class="ytcplayer" allowfullscreen src="http://www.youtube.com/embed/' . $youtubeid . '?version=3' . $ytchag_theme . $ytchag_color .  $ytchag_autoplay.  $ytchag_modestbranding . $ytchag_rel . $ytchag_showinfo .'&enablejsapi=1&wmode=transparent" frameborder="0"></iframe></div>';
-					$content.='<div class="vid-title">'.$title.'</div><div class="vid-description">'.$description.'</div>';
+					$content.='<h3 class="vid-title adjust">'.$title.'</h3><div class="vid-description adjust">'.$description.'</div>';
 					$content.= '<ul class="ytchagallery ytccf' . $tableclass . $title_and_description_alignment_class . $columnnumber . ' ytc-thumb' . $ytchag_thumb_ratio . '">';
 
 				} // if player end
